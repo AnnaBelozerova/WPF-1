@@ -5,143 +5,59 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_1"
         mc:Ignorable="d"
-        Title="Калькулятор" Height="400" Width="300" VerticalAlignment="Center"  Margin="0,0,0,-4"  HorizontalAlignment="Center" BorderBrush="#FF094AF5">
-    <Window.Background>
-        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="#FFDAD7D7" Offset="1"/>
-            <GradientStop Color="White"/>
-        </LinearGradientBrush>
-    </Window.Background>
-    <Grid>
-        <TextBox x:Name="__" HorizontalAlignment="Center" Height="40" Margin="0,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" BorderBrush="#FFBBB6B6"/>
-        <Button Content="1" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="2" HorizontalAlignment="Left" Margin="70,80,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="3" HorizontalAlignment="Left" Margin="130,80,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="4" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="5" HorizontalAlignment="Left" Margin="70,150,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="6" HorizontalAlignment="Left" Margin="130,150,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="7" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="8" HorizontalAlignment="Left" Margin="70,220,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="9" HorizontalAlignment="Left" Margin="130,220,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="0" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="," HorizontalAlignment="Left" Margin="70,290,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="=" HorizontalAlignment="Left" Margin="130,290,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="+" HorizontalAlignment="Right" Margin="0,80,10,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="-" HorizontalAlignment="Right" Margin="0,150,10,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="*" HorizontalAlignment="Right" Margin="0,220,10,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button Content="/" HorizontalAlignment="Right" Margin="0,290,10,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="#FFBBB6B6">
-            <Button.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFEEEEEE" Offset="1"/>
-                    <GradientStop Color="White" Offset="0.237"/>
-                </RadialGradientBrush>
-            </Button.Background>
-        </Button>
+        Title="Калькулятор" Height="350" Width="250" VerticalAlignment="Center"  Margin="0,0,0,-4"  HorizontalAlignment="Center" BorderBrush="#FF094AF5" Background="#FFF3F3F3">
+    
+    <Window.Resources>
+        <!--стиль цифровых кнопок-->
+        <Style x:Key="ButtonStyleNumber">
+            <Setter Property="Button.Background" Value="White"/>
+            <Setter Property="Button.BorderThickness" Value="0"/>
+            <Setter Property="Button.Margin" Value="1"/>
+            <Setter Property="Button.FontWeight" Value="Bold"/>
+        </Style>
+        <!--стиль кнопок с операторами-->
+        <Style x:Key="ButtonStyleOperator">
+            <Setter Property="Button.Background" Value="#FFDED9D9"/>
+            <Setter Property="Button.BorderThickness" Value="0"/>
+            <Setter Property="Button.Margin" Value="1"/>            
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock x:Name="text" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="36" TextWrapping="Wrap"  VerticalAlignment="Bottom" />
+       
+        <Button Content="1" Grid.Column="0" Grid.Row="1" Style="{StaticResource ButtonStyleNumber}" />
+        <Button Content="2" Grid.Column="1" Grid.Row="1" Style="{StaticResource ButtonStyleNumber}"/>
+        <Button Content="3" Grid.Column="2" Grid.Row="1" Style="{StaticResource ButtonStyleNumber}"/>
 
+        <Button Content="4" Grid.Column="0" Grid.Row="2" Style="{StaticResource ButtonStyleNumber}"/>
+        <Button Content="5" Grid.Column="1" Grid.Row="2" Style="{StaticResource ButtonStyleNumber}"/>
+        <Button Content="6" Grid.Column="2" Grid.Row="2" Style="{StaticResource ButtonStyleNumber}"/>
+
+        <Button Content="7" Grid.Column="0" Grid.Row="3" Style="{StaticResource ButtonStyleNumber}"/>
+        <Button Content="8" Grid.Column="1" Grid.Row="3" Style="{StaticResource ButtonStyleNumber}"/>
+        <Button Content="9" Grid.Column="2" Grid.Row="3" Style="{StaticResource ButtonStyleNumber}"/>
+
+        <Button Content="0" Grid.Column="0" Grid.Row="4" Style="{StaticResource ButtonStyleNumber}"/>
+        <Button Content="*" Grid.Column="1" Grid.Row="4" Style="{StaticResource ButtonStyleOperator}"/>
+        <Button Content="/" Grid.Column="2" Grid.Row="4" Style="{StaticResource ButtonStyleOperator}"/>
+
+        <Button Content="AC" Grid.Column="3" Grid.Row="1" Style="{StaticResource ButtonStyleOperator}"/>
+        <Button Content="+" Grid.Column="3" Grid.Row="2" Style="{StaticResource ButtonStyleOperator}"/>
+        <Button Content="-" Grid.Column="3" Grid.Row="3" Style="{StaticResource ButtonStyleOperator}"/>
+        <Button Content="=" Grid.Column="3" Grid.Row="4" Style="{StaticResource ButtonStyleOperator}" Background="#FFE1E1FF"/>
     </Grid>
 </Window>
